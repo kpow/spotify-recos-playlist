@@ -153,7 +153,7 @@ app.post('/playlist', function(req, res) {
       headers: { 'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json' },
       json: true,
       dataType: 'json',
-      body: { "name": "Nelson Recommended Tracks", "description": "Recommended tracks based on " + genres + " with " + features }
+      body: { "name": "Kpow Recommended Tracks", "description": "Recommended tracks based on " + genres + " with " + features }
     };
 
     request.post(options, function(error, response, body) {

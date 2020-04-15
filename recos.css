@@ -73,18 +73,18 @@ h3 {
   width: 80%;
 }
 
-.nelson {
+.recos {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   margin: 2vw;
 }
 
-.nelson > div {
+.recos > div {
   border-radius: 10px;
 }
 
-.nelson .body {
+.recos .body {
   width: 90%;
   padding: 30px;
   border: 1px #ccc solid;

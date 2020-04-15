@@ -61,7 +61,7 @@ function onSpotifyPlayerAPIReady() {
 
   player.on('ready', function(data) {
     deviceId = data.device_id;
-    localStorage.setItem('nelsonBrowserDeviceID', data.device_id);
+    localStorage.setItem('browserDeviceID', data.device_id);
   });
 
   player.on('player_state_changed', function(data) {
@@ -156,7 +156,7 @@ function setPlaybackSetting(setting) {
   }
   
   if (setting == 1) {
-    setDevice(localStorage.getItem('nelsonBrowserDeviceID'));
+    setDevice(localStorage.getItem('browserDeviceID'));
     $('#current-playback').text('In Browser');
   }
   

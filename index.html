@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://sp-bootstrap.global.ssl.fastly.net/8.0.0/sp-bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" href="nelson.css"/>
+    <link rel="stylesheet" href="recos.css"/>
     <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://sp-bootstrap.global.ssl.fastly.net/8.0.0/sp-bootstrap.js"></script>
@@ -13,22 +13,8 @@
     <script src="https://sdk.scdn.co/spotify-player.js"></script>
   </head>
   <body>
-    <div class="nelson">
-      
-      <!-- Dark mode toggle -->
-      <span id="darkmode-button">
-        <img src="https://cdn.glitch.com/9641d2b3-59eb-408e-ab02-0b9bbd49b069%2Fmoon-4-xxl.png?1556279599153"/>
-      </span>
-      
-      <!-- Twitter Follow Button -->
-      <div style="position:absolute;top:0;right:0;margin:20px;">
-        <a href="https://twitter.com/AriVanider?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @AriVanider</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
-      
-      <!-- Alerts -->
-      <div class="alert alert-info" role="alert">Like the project? It uses the Spotify <a href="https://beta.developer.spotify.com/documentation/web-api/reference/browse/get-recommendations/">Recommendations API</a> and <a href="https://beta.developer.spotify.com/documentation/web-playback-sdk/">Web Playback SDK</a>. Try it yourself!</div>
-      <div id="notice"></div>
-      
+    <div class="recos">
+
       <!-- Main App -->
       
       <!-- Floating action button -->
@@ -49,9 +35,7 @@
         </div>
         
         <span>Current Playback: <span id="current-playback"></span></span>
-        <p style="font-size:12px">
-          Playback is only supported for Spotify Premium users. In Browser Playback is not supported in Safari or on mobile devices.
-        </p>
+    
         <!-- Playback Setting -->
         <div class="inline">
           <h3 class="spacer">Playback</h3>
@@ -128,12 +112,6 @@
       
     </div><!-- /.nelson -->
     
-    <p>
-      <i style="font-size:11px;">This is a personal hack project on Spotify's public APIs and SDKs and does not represent Spotify.</i>
-    </p>
-    
-    <div class="alert alert-info" role="alert">My source code is on <a href="https://glitch.com/edit/#!/nelson">Glitch!</a></div>
-
     <!-- Modals! -->
     
     <div class="modal fade" id="genre-select">
